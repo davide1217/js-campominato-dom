@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+header{
+  height: 100px;
+}
+
+header ._container{
+  height: 100%;
+}
+
+header ._row{
+  height: 100%;
+}
+
+header ._col{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header img{
+  height: 70%;
+}
+
+header h1{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #193A57;
+  margin-left: 20px;
+}
+
+header ._col span{
+  font-size: 1.2rem;
+}
+
+header ._form{
+  width: 200px;
+  margin-left: 10px;
+  padding: 9px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header ._btn{
+  margin-left: 10px;
+  padding: 6.5px 20px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+}
+
+header ._btn:active{
+  border: 1px solid black;
+  margin-left: 8px;
+}
+/* header */
+
+
+/* main */
+main{
+  height: calc(100vh - 200px);
+  background-color: aqua;
+  position: relative;
+}
+
+main ._container{
+  width: 500px;
+  height: 500px;
+}
+
+.square100 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 2px solid white;
+  color: white;
+}
+
+.square81 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+  border: 2px solid white;
+  color: white;
+}
+
+.square49 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+  border: 2px solid white;
+  color: white;
+}
+
+.clicked.safe{
+  background-color: rgb(13, 56, 56);
+}
+
+.clicked.bomb{
+  background-color: red;
+}
+
+.square100 span{
+  display: none;
+}
+
+.square81 span{
+  display: none;
+}
+
+.square49 span{
+  display: none;
+}
+
+.square100.clicked span{
+  display: block;
+}
+
+.square81.clicked span{
+  display: block;
+}
+
+.square49.clicked span{
+  display: block;
+}
+
+#ender{
+  display: none;
+}
+
+#ender.ender{
+  display: block;
+  height: calc(100vh - 200px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* main */
+
+
+footer{
+  height: 100px;
+}
